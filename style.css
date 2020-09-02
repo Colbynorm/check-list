@@ -1,5 +1,4 @@
-.row {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+/* hide white space on right side of screen */
+html, body {
+    overflow-x: hidden;
 }
