@@ -10,38 +10,44 @@
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
       crossorigin="anonymous"
     /> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link rel="stylesheet" href="node_modules/mdbootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/mdbootstrap/css/mdb.min.css">
+    <link rel="stylesheet" href="node_modules/mdbootstrap/css/style.css">
+
     <title>Check-List</title>
   </head>
   <container>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">Welcome to your drink Check-List!</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="#">Your List!</a>
-          <a class="nav-item nav-link" href="#">About Us</a>
+    <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar">
+        <a class="navbar-brand" href="#">Welcome to your drink Check-List!</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-item nav-link" href="#">Your List!</a>
+                    <a class="nav-item nav-link" href="#">About Us</a>
+              </div>
+            </div>
+      </nav>
+
+      <br>
+
+      <div class="jumbotron jumbotron-fluid" id="jumbotron-header">
+        <div class="container">
+          <h1 class="display-4">Drink Check-List!</h1>
+            <p class="lead">
+              This is an app where you can add the different kinds of alcoholic drinks you've had and let us know if they were good or not!
+            </p>
         </div>
       </div>
-    </nav>
-
-    <br>
-
-    <div class="jumbotron jumbotron-fluid" id="jumbotron-header">
-      <div class="container">
-        <h1 class="display-4">Drink Check-List!</h1>
-        <p class="lead">
-          This is an app where you can add the different kinds of alcoholic drinks you've had and let us know if they were good or not!
-        </p>
-      </div>
-    </div>
     </body>
 
     <body>
-    <div class="body">
+      <div class="body">
         <div class="row">
             <div class="col-md-4" id="type">
                   <select class="form-control">
@@ -55,11 +61,11 @@
 
             <div class="col-md-4" id="name">
                 <div class="input-group mb-4">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text" id="inputGroup-sizing-default">Name of Alcohol</span>
-                    </div>
-                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Name of Alcohol</span>
                   </div>
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                </div>
             </div>
 
             <div class="col-md-4" id="type">
@@ -69,38 +75,24 @@
                   <option>OK</option>
                   <option>Bad</option>
                 </select>
-          </div>
+            </div>
 
         </div>
 
         <br>
+        
         <div class="save-btn">
           <button type="button" class="btn btn-success" id="save-btn">Save Selection!</button>
         </div>
     </div>
-    </container>
 
-
-
-
-
-
-
-
-    <!-- <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-      crossorigin="anonymous"
-    ></script> -->
+    <footer class="page-footer font-large blue fixed-bottom" id="footer">
+      <div class="footer-copyright text-center py-3">© 2020 Colby Norman</div>
+    </footer>
+  </container>
+    <script type="text/javascript" src="node_modules/mdbootstrap/js/jquery.min.js"></script>
+    <script type="text/javascript" src="node_modules/mdbootstrap/js/popper.min.js"></script>
+    <script type="text/javascript" src="node_modules/mdbootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="node_modules/mdbootstrap/js/mdb.min.js"></script>
   </body>
 </html>
