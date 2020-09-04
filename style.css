@@ -2,3 +2,7 @@
 html, body {
     overflow-x: hidden;
 }
+
+#save-btn {
+    margin-left: 675px;
+}
