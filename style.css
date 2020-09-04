@@ -6,3 +6,7 @@ html, body {
 #save-btn {
     margin-left: 675px;
 }
+
+#navbar {
+    background: green;
+}
