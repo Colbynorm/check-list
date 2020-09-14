@@ -11,6 +11,8 @@
 //     localStorage.setItem('alcohol-rating', alcoholRating.toUpperCase());
 // });
 
+
+// Add to local storage
 function getData() {
     var alcoholType = document.getElementById("type").value;
     var alcoholName = document.getElementById("name").value;
