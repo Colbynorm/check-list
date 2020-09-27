@@ -47,22 +47,25 @@
     </body>
 
     <body>
-      <div id="submitAlcohol" class="row">
+      <form id="myForm" action="./pages/yourList/yourList.html">
+         <div id="submitAlcohol" class="row">
             <div class="col-md-4">
-              <input type="text" id="type" placeholder="Type of Alocohol">
+              <input type="text" name="type" id="type" placeholder="Type of Alocohol">
             </div>
 
-          <br>
+            <br>
 
-          <div class="col-md-4">
-            <input type="text" id="name" placeholder="Name of Alocohol">
-          </div>
-          <br>
+            <div class="col-md-4">
+              <input type="text" name="name" id="name" placeholder="Name of Alocohol">
+            </div>
+            <br>
 
-          <div class="col-md-4">
-            <input type="text" id="rating"placeholder="Rating of Alcohol">
+            <div class="col-md-4">
+              <input type="text" name="rating" id="rating"placeholder="Rating of Alcohol">
+            </div>
           </div>
-      </div>
+      </form>
+     
       <!-- <div class="body">
         <div class="row">
             <div class="col-md-4" id="type">
@@ -98,7 +101,7 @@
         <br>
         
         <div class="save-btn">
-          <button type="submit" class="btn btn-success" id="save-btn" onclick="getData()">Save Selection!</button>
+          <button type="submit" name="submit" value="submit" class="btn btn-success" id="save-btn" onclick="getData()">Save Selection!</button>
         </div>
     </div>
 
